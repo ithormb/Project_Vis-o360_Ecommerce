@@ -99,5 +99,6 @@ De acordo com o parametros definido entre (Receita, Pedidos e Ticket Médio) os 
 ## Detalhamento - Pasta com os arquivos do Projeto
 
 - `Projeto Gestão360 - Ecommerce.ipynb` - Arquivo com o código do Google Colab do projeto;
-- `tabint_revw_ag`/`tabint_pag_ag`/`tabint_itped_ag` - Arquivos em SQL que devem ser rodados como consulta no Bigquery para geração das tabelas intermediárias;
+- `tabint_revw_ag.sql`/`tabint_pag_ag.sql`/`tabint_itped_ag.sql` - Arquivos em SQL que devem ser rodados como consulta no Bigquery para geração das tabelas intermediárias;
+- `bd_datasets_agregado3.sql`- Arquivo em SQL que gera o dataset final do projeto e que será utilizado apenas para a construção da dashboard do Looker Studio. Para a dashboard do Power BI será utilizado cada tabela gerada na etapa 2 e enviada para o Bigquery, e as conexões serão realizadas via modelagem de dados no próprio Power BI; 
 - `Projeto_Gestao360_Ecommerce.pbix` - Arquivo com a dashboard no Power BI;
