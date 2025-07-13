@@ -85,5 +85,6 @@ De acordo com o parametros definido entre (Receita, Pedidos e Ticket Médio) os 
 - Distribuição Geográfica: Mapa mostrando distribuição do parâmetro definido por cidade e UF;
 - Detalhamento dos indicadores por categoria de produto: Tabela com detalhamento dos 5 indicadores de acordo com a categoria dos produtos. 
 
-LINK DASHBOARD POWER BI -
-LINK DASHBOARD LOOKER - https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2
+## Acesso ao Dashboard
+- LINK DASHBOARD POWER BI -
+- LINK DASHBOARD LOOKER - https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2
