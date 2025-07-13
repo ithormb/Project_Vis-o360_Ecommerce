@@ -1,4 +1,15 @@
 # Projeto Visão 360 E-commerce - Dashboard Power BI vs Looker Studio
+## Link do Projeto
+
+- Pasta completo do Projeto - https://drive.google.com/drive/folders/1KBK9Jb5AEUrG6BxTCVuH-oAiXkg7SY1y?usp=sharing
+  
+**Dashboards**
+
+- Dashboard Looker Studio - https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2
+- Dashboard Power BI - [https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2](https://drive.google.com/file/d/1TtH76F-wIBZsDbf7GiRb9silFvIT5EMG/view?usp=sharing)
+
+**Obs:.** **O último tópico** explica cada arquivo presente na pasta acima;
+
 
 ## Objetivo do projeto
 
@@ -56,7 +67,7 @@ Um ponto crucial a ser destacado é que, para otimizar a performance e contornar
 
 - `tabint_itped_ag:` Agrega dados de itens do pedido, somando preço e frete, contando o total de itens, e listando IDs de produtos e vendedores por order_id.
 
-A partir dessas tabelas intermediárias e das tabelas originais carregadas do Colab (como `pedidos, clientes, produtos, vendedores e categorias`), a tabela final `bd_datasets_agregado3` é construída. Essa tabela integra todas as informações necessárias por meio de múltiplas junções (`LEFT JOINs`) baseadas nos IDs de relacionamento, consolidando um dataset único e abrangente. Esse processo de pré-agregação garante que o Looker Studio possa acessar dados já preparados e otimizados para suas visualizações, evitando a necessidade de cálculos complexos em tempo real na ferramenta de BI.
+**A partir dessas tabelas intermediárias e das tabelas originais** carregadas do Colab (como `pedidos, clientes, produtos, vendedores e categorias`), a **view final `bd_datasets_agregado3` é construída**. Essa tabela integra todas as informações necessárias por meio de múltiplas junções (`LEFT JOINs`) baseadas nos IDs de relacionamento, consolidando um dataset único e abrangente. Esse processo de pré-agregação garante que o Looker Studio possa acessar dados já preparados e otimizados para suas visualizações, evitando a necessidade de cálculos complexos em tempo real na ferramenta de BI.
 
 Os códigos em SQL para criação de cada tabela intermediária (`tabint`) estarão em anexo no repósitório;
 
@@ -85,6 +96,8 @@ De acordo com o parametros definido entre (Receita, Pedidos e Ticket Médio) os 
 - Distribuição Geográfica: Mapa mostrando distribuição do parâmetro definido por cidade e UF;
 - Detalhamento dos indicadores por categoria de produto: Tabela com detalhamento dos 5 indicadores de acordo com a categoria dos produtos. 
 
-## Acesso ao Dashboard
-- LINK DASHBOARD POWER BI -
-- LINK DASHBOARD LOOKER - https://lookerstudio.google.com/reporting/8a85399b-7788-4bd3-959e-3e93ea45def2
+## Detalhamento - Pasta com os arquivos do Projeto
+
+- `Projeto Gestão360 - Ecommerce.ipynb` - Arquivo com o código do Google Colab do projeto;
+- `tabint_revw_ag`/`tabint_pag_ag`/`tabint_itped_ag` - Arquivos em SQL que devem ser rodados como consulta no Bigquery para geração das tabelas intermediárias;
+- `Projeto_Gestao360_Ecommerce.pbix` - Arquivo com a dashboard no Power BI;
